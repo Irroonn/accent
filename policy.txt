@@ -1,0 +1,7 @@
+R1: Deny if OR(WIB, IJP)
+R2: Permit if AND(WIB, IJP)
+P1: DOV(R1, R2)
+R3: Permit if AND(NKY, YGS)
+R4: Deny if WXW
+P2: DOV(R3, R4)
+P: DOV(P1, P2)
